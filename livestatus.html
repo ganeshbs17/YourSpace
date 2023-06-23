@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yourspace</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel=”stylesheet”
+    href=”https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css”
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary"
+      style="background-color: #f4ebff !important"
+    >
+      <div class="container-fluid d-flex justify-content-between">
+        <div>
+          <a
+            class="navbar-brand"
+            href="#"
+            style="color: #831bfa; font-weight: 700; font-size: 30px"
+          >
+            YourSpace
+          </a>
+        </div>
+        <div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <button
+                class="btn mx-2"
+                style="
+                  color: #831bfa;
+                  font-weight: 500;
+                  border: 2px solid #831bfa;
+                "
+              >
+                Login
+              </button>
+              <button
+                class="btn mx-2"
+                style="
+                  background-color: #831bfa;
+                  font-weight: 500;
+                  color: white;
+                "
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+        <div class="content" >
+            
+            <div class="flex-column">
+                <h2>Live Location</h2>
+                <p>Phoenix Sports, 1st Floor, 1st Main Road, 1st Block, Koramangala, Bengaluru, Karnataka 560034</p>
+            
+            <div>
+                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1943.6668679501536!2d77.71042155941113!3d13.01440680835153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11ad833a957b%3A0x9efd4933f99ff3d5!2sPhoenix%20Sports!5e0!3m2!1sen!2sin!4v1687518190554!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+            <div class="flex-column">
+                    <h2>Current Status</h2><br>
+                    <p>Time of Booking</p>
+                    <p>02:33pm </p><br>
+                    <p> Time Remaining</p>
+                    <p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jun 23, 2023 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+                </div>
+            
+        </div>
+hii
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #929fba; margin-top: 32px;"
+    >
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="text-white" href="#" style="text-decoration: none"
+          >Tech Ninjas</a
+        >
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .content {
+        display: flex;
+        
+      }
+      .flex-column {
+        
+        flex: 50%;
+      }
+  </body>
+</html>
